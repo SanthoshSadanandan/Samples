@@ -7,7 +7,7 @@ CSV_COLUMN_NAMES = ['Frquency','Angle_of_Attack','Chord_Length','Free_stream_vel
 data = pd.read_csv('airfoil_self_noise.csv')
 # Delete rows with unknowns
 data = data.dropna()
-# Shuffle the data
+# Shuffle the data - test
 np.random.seed(None)
 
 sound_pressure_level = data.pop('Sound_pressure_level')
